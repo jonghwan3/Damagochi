@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		6A08C3A4288C388D006CBCA9 /* PopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A08C3A3288C388D006CBCA9 /* PopupViewController.swift */; };
+		6A08C3A7288D5163006CBCA9 /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = 6A08C3A6288D5163006CBCA9 /* Toast */; };
+		6A08C3A9288D522D006CBCA9 /* UserDefaultsKeyInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A08C3A8288D522D006CBCA9 /* UserDefaultsKeyInfo.swift */; };
+		6A08C3AB288D5314006CBCA9 /* MyDamagochiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A08C3AA288D5314006CBCA9 /* MyDamagochiViewController.swift */; };
+		6A08C3AD288D5CDB006CBCA9 /* UILabel+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A08C3AC288D5CDB006CBCA9 /* UILabel+extension.swift */; };
 		6A2B9BC9288A7E2F0028E5AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A2B9BC8288A7E2F0028E5AD /* AppDelegate.swift */; };
 		6A2B9BCB288A7E2F0028E5AD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A2B9BCA288A7E2F0028E5AD /* SceneDelegate.swift */; };
 		6A2B9BD0288A7E2F0028E5AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A2B9BCE288A7E2F0028E5AD /* Main.storyboard */; };
@@ -17,10 +21,19 @@
 		6A2B9BE3288C05C90028E5AD /* DamagochiInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A2B9BE2288C05C90028E5AD /* DamagochiInfo.swift */; };
 		6A8F96E4288C0BAC00960C40 /* MainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8F96E3288C0BAC00960C40 /* MainCollectionViewCell.swift */; };
 		6A8F96E6288C1C1800960C40 /* ColorInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8F96E5288C1C1800960C40 /* ColorInfo.swift */; };
+		6A90A0A4288D7385000A0E67 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 6A90A0A3288D7385000A0E67 /* IQKeyboardManagerSwift */; };
+		6A90A0A6288D767F000A0E67 /* UIButton+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A90A0A5288D767F000A0E67 /* UIButton+extension.swift */; };
+		6A90A0A9288D7D97000A0E67 /* TextFieldEffects in Frameworks */ = {isa = PBXBuildFile; productRef = 6A90A0A8288D7D97000A0E67 /* TextFieldEffects */; };
+		6A90A0AB288D8E6C000A0E67 /* MyProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A90A0AA288D8E6C000A0E67 /* MyProfileTableViewController.swift */; };
+		6A90A0AD288D901F000A0E67 /* MyProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A90A0AC288D901F000A0E67 /* MyProfileTableViewCell.swift */; };
+		6A90A0AF288D9D2E000A0E67 /* MyNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A90A0AE288D9D2E000A0E67 /* MyNameViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6A08C3A3288C388D006CBCA9 /* PopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupViewController.swift; sourceTree = "<group>"; };
+		6A08C3A8288D522D006CBCA9 /* UserDefaultsKeyInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsKeyInfo.swift; sourceTree = "<group>"; };
+		6A08C3AA288D5314006CBCA9 /* MyDamagochiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDamagochiViewController.swift; sourceTree = "<group>"; };
+		6A08C3AC288D5CDB006CBCA9 /* UILabel+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+extension.swift"; sourceTree = "<group>"; };
 		6A2B9BC5288A7E2F0028E5AD /* Damagochi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Damagochi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A2B9BC8288A7E2F0028E5AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6A2B9BCA288A7E2F0028E5AD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -32,6 +45,10 @@
 		6A2B9BE2288C05C90028E5AD /* DamagochiInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DamagochiInfo.swift; sourceTree = "<group>"; };
 		6A8F96E3288C0BAC00960C40 /* MainCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionViewCell.swift; sourceTree = "<group>"; };
 		6A8F96E5288C1C1800960C40 /* ColorInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorInfo.swift; sourceTree = "<group>"; };
+		6A90A0A5288D767F000A0E67 /* UIButton+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+extension.swift"; sourceTree = "<group>"; };
+		6A90A0AA288D8E6C000A0E67 /* MyProfileTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileTableViewController.swift; sourceTree = "<group>"; };
+		6A90A0AC288D901F000A0E67 /* MyProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileTableViewCell.swift; sourceTree = "<group>"; };
+		6A90A0AE288D9D2E000A0E67 /* MyNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyNameViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +56,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A90A0A9288D7D97000A0E67 /* TextFieldEffects in Frameworks */,
+				6A08C3A7288D5163006CBCA9 /* Toast in Frameworks */,
+				6A90A0A4288D7385000A0E67 /* IQKeyboardManagerSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,13 +84,20 @@
 		6A2B9BC7288A7E2F0028E5AD /* Damagochi */ = {
 			isa = PBXGroup;
 			children = (
-				6A08C3A3288C388D006CBCA9 /* PopupViewController.swift */,
+				6A90A0AA288D8E6C000A0E67 /* MyProfileTableViewController.swift */,
+				6A90A0AC288D901F000A0E67 /* MyProfileTableViewCell.swift */,
+				6A08C3A8288D522D006CBCA9 /* UserDefaultsKeyInfo.swift */,
 				6A2B9BC8288A7E2F0028E5AD /* AppDelegate.swift */,
 				6A2B9BCA288A7E2F0028E5AD /* SceneDelegate.swift */,
 				6A2B9BCE288A7E2F0028E5AD /* Main.storyboard */,
-				6A8F96E3288C0BAC00960C40 /* MainCollectionViewCell.swift */,
+				6A90A0AE288D9D2E000A0E67 /* MyNameViewController.swift */,
+				6A08C3AA288D5314006CBCA9 /* MyDamagochiViewController.swift */,
+				6A90A0A5288D767F000A0E67 /* UIButton+extension.swift */,
+				6A08C3AC288D5CDB006CBCA9 /* UILabel+extension.swift */,
 				6A8F96E5288C1C1800960C40 /* ColorInfo.swift */,
 				6A2B9BE0288C03EB0028E5AD /* MainCollectionViewController.swift */,
+				6A8F96E3288C0BAC00960C40 /* MainCollectionViewCell.swift */,
+				6A08C3A3288C388D006CBCA9 /* PopupViewController.swift */,
 				6A2B9BE2288C05C90028E5AD /* DamagochiInfo.swift */,
 				6A2B9BD1288A7E310028E5AD /* Assets.xcassets */,
 				6A2B9BD3288A7E310028E5AD /* LaunchScreen.storyboard */,
@@ -95,6 +122,11 @@
 			dependencies = (
 			);
 			name = Damagochi;
+			packageProductDependencies = (
+				6A08C3A6288D5163006CBCA9 /* Toast */,
+				6A90A0A3288D7385000A0E67 /* IQKeyboardManagerSwift */,
+				6A90A0A8288D7D97000A0E67 /* TextFieldEffects */,
+			);
 			productName = Damagochi;
 			productReference = 6A2B9BC5288A7E2F0028E5AD /* Damagochi.app */;
 			productType = "com.apple.product-type.application";
@@ -123,6 +155,11 @@
 				Base,
 			);
 			mainGroup = 6A2B9BBC288A7E2F0028E5AD;
+			packageReferences = (
+				6A08C3A5288D5163006CBCA9 /* XCRemoteSwiftPackageReference "Toast-Swift" */,
+				6A90A0A2288D7385000A0E67 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+				6A90A0A7288D7D97000A0E67 /* XCRemoteSwiftPackageReference "TextFieldEffects" */,
+			);
 			productRefGroup = 6A2B9BC6288A7E2F0028E5AD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -150,6 +187,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A08C3AD288D5CDB006CBCA9 /* UILabel+extension.swift in Sources */,
+				6A90A0AF288D9D2E000A0E67 /* MyNameViewController.swift in Sources */,
+				6A08C3A9288D522D006CBCA9 /* UserDefaultsKeyInfo.swift in Sources */,
+				6A90A0AD288D901F000A0E67 /* MyProfileTableViewCell.swift in Sources */,
+				6A90A0A6288D767F000A0E67 /* UIButton+extension.swift in Sources */,
 				6A2B9BC9288A7E2F0028E5AD /* AppDelegate.swift in Sources */,
 				6A2B9BE1288C03EB0028E5AD /* MainCollectionViewController.swift in Sources */,
 				6A8F96E4288C0BAC00960C40 /* MainCollectionViewCell.swift in Sources */,
@@ -157,6 +199,8 @@
 				6A2B9BCB288A7E2F0028E5AD /* SceneDelegate.swift in Sources */,
 				6A2B9BE3288C05C90028E5AD /* DamagochiInfo.swift in Sources */,
 				6A08C3A4288C388D006CBCA9 /* PopupViewController.swift in Sources */,
+				6A08C3AB288D5314006CBCA9 /* MyDamagochiViewController.swift in Sources */,
+				6A90A0AB288D8E6C000A0E67 /* MyProfileTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,7 +343,7 @@
 		6A2B9BDA288A7E310028E5AD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -327,7 +371,7 @@
 		6A2B9BDB288A7E310028E5AD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -374,6 +418,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6A08C3A5288D5163006CBCA9 /* XCRemoteSwiftPackageReference "Toast-Swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scalessec/Toast-Swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		6A90A0A2288D7385000A0E67 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager.git";
+			requirement = {
+				kind = exactVersion;
+				version = 6.5.0;
+			};
+		};
+		6A90A0A7288D7D97000A0E67 /* XCRemoteSwiftPackageReference "TextFieldEffects" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/raulriera/TextFieldEffects.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6A08C3A6288D5163006CBCA9 /* Toast */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6A08C3A5288D5163006CBCA9 /* XCRemoteSwiftPackageReference "Toast-Swift" */;
+			productName = Toast;
+		};
+		6A90A0A3288D7385000A0E67 /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6A90A0A2288D7385000A0E67 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
+		};
+		6A90A0A8288D7D97000A0E67 /* TextFieldEffects */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6A90A0A7288D7D97000A0E67 /* XCRemoteSwiftPackageReference "TextFieldEffects" */;
+			productName = TextFieldEffects;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6A2B9BBD288A7E2F0028E5AD /* Project object */;
 }

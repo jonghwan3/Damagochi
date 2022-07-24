@@ -17,13 +17,7 @@ class MainCollectionViewCell: UICollectionViewCell {
         //damagochiButton.layer.cornerRadius = damagochiButton.bounds.size.width / 2
         
         damagochiLabel.text = damagochiData.damagochiKind.damagochiName()
-        damagochiLabel.textAlignment = .center
-        damagochiLabel.font = .boldSystemFont(ofSize: 13)
-        damagochiLabel.textColor = ColorInfo.fontUIColor
-        damagochiLabel.layer.cornerRadius = 4
-        damagochiLabel.layer.borderWidth = 1
-        damagochiLabel.layer.borderColor = ColorInfo.fontCGColor
-        damagochiLabel.backgroundColor = ColorInfo.backgroundUIColor
+        damagochiLabel.damagochiNameStyle()
     }
     
 }
