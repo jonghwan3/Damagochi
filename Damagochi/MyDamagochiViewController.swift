@@ -142,7 +142,6 @@ class MyDamagochiViewController: UIViewController {
             setDamagochiInfo()
         }
     }
-    
     func setDamagochiInfo() {
         damagochiInfoLabel.text = "LV\(damagochiData!.getLevel()) · 밥알 \(damagochiData!.rice)개 · 물방울 \(damagochiData!.water)개"
         damagochiImageView.image = damagochiData?.levelImage()
