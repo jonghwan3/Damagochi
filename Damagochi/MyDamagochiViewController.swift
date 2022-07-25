@@ -27,23 +27,30 @@ class MyDamagochiViewController: UIViewController {
     var damagochiData: Damagochi?
     var maxRice = 100
     var maxWater = 50
+    var myName = UserDefaults.standard.string(forKey: UserDefaultsKeyInfo.myName) ?? "OO"
+    var dialogueList: [String]?
 //
-    var dialogueList = [
-        "안녕하세요? \(UserDefaults.standard.string(forKey: UserDefaultsKeyInfo.myName) ?? "OO")님~",
-        "복습 아직 안하셨다구요? 지금 잠이 오세여? \(UserDefaults.standard.string(forKey: UserDefaultsKeyInfo.myName) ?? "OO")님?",
-        "\(UserDefaults.standard.string(forKey: UserDefaultsKeyInfo.myName) ?? "OO")님? 새벽 3시까지 하신거예요?",
-        "다음에 만들고 싶은 앱은 무엇인가요?",
-        "로또번호를 알려드립니다~ \(Int.random(in: 1...50)), \(Int.random(in: 1...50)), \(Int.random(in: 1...50)), \(Int.random(in: 1...50)), \(Int.random(in: 1...50)), \(Int.random(in: 1...50)), \(Int.random(in: 1...50))",
-        "돌아오세요~~ 시작할께요~~ 화면 켜주세요~~",
-        "\(UserDefaults.standard.string(forKey: UserDefaultsKeyInfo.myName) ?? "OO")님? git에 commit은 하셨겠죠?"
-    ]
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setDialogueList()
         view.backgroundColor = ColorInfo.backgroundUIColor
         damagochiData = Damagochi(damagochiKind: getDamagochiKind(rawValue: userDamagochiKindRawValue), rice: userDamagochiRice, water: userDamagochiWater)
         navigationConfig()
         viewConfig()
+    }
+    
+    func setDialogueList() {
+        dialogueList = [
+            "안녕하세요? \(myName)님~",
+            "복습 아직 안하셨다구요? 지금 잠이 오세여? \(myName)님?",
+            "\(myName)님? 새벽 3시까지 하신거예요?",
+            "다음에 만들고 싶은 앱은 무엇인가요?",
+            "로또번호를 알려드립니다~ \(Int.random(in: 1...50)), \(Int.random(in: 1...50)), \(Int.random(in: 1...50)), \(Int.random(in: 1...50)), \(Int.random(in: 1...50)), \(Int.random(in: 1...50)), \(Int.random(in: 1...50))",
+            "돌아오세요~~ 시작할께요~~ 화면 켜주세요~~",
+            "\(myName)님? git에 commit은 하셨겠죠?"
+        ]
     }
     
     func getDamagochiKind(rawValue: Int) -> DamagochiKind {
@@ -58,7 +65,7 @@ class MyDamagochiViewController: UIViewController {
     func navigationConfig() {
         self.navigationController?.navigationBar.tintColor = ColorInfo.fontUIColor
         
-        navigationItem.title = "\(UserDefaults.standard.string(forKey: UserDefaultsKeyInfo.myName) ?? "OO")님의 다마고치"
+        navigationItem.title = "\(myName)님의 다마고치"
         
         let textAttributes = [NSAttributedString.Key.foregroundColor: ColorInfo.fontUIColor]
         navigationController?.navigationBar.titleTextAttributes = textAttributes
@@ -76,7 +83,7 @@ class MyDamagochiViewController: UIViewController {
         riceTextField.keyboardType = .numberPad
         waterTextField.keyboardType = .numberPad
         
-        ballonLabel.text = "안녕하세요? \(UserDefaults.standard.string(forKey: UserDefaultsKeyInfo.myName) ?? "OO")님~"
+        ballonLabel.text = "안녕하세요? \(myName)님~"
         ballonLabel.damagochiInfoStyle()
         
         ballonImageView.image = UIImage(named: "bubble")
@@ -99,7 +106,7 @@ class MyDamagochiViewController: UIViewController {
         if riceTextField.text == "" || riceTextField.text == nil {
             UserDefaults.standard.set(damagochiData!.rice+1, forKey: UserDefaultsKeyInfo.damagochiRice)
             damagochiData?.rice = UserDefaults.standard.integer(forKey: UserDefaultsKeyInfo.damagochiRice)
-            ballonLabel.text = dialogueList.randomElement()
+            ballonLabel.text = dialogueList?.randomElement()
             setDamagochiInfo()
         } else if Int(riceTextField.text!) == nil {
             ballonLabel.text = "숫자만 입력해주세요"
@@ -111,7 +118,7 @@ class MyDamagochiViewController: UIViewController {
         } else {
             UserDefaults.standard.set(damagochiData!.rice+Int(riceTextField.text!)!, forKey: UserDefaultsKeyInfo.damagochiRice)
             damagochiData?.rice = UserDefaults.standard.integer(forKey: UserDefaultsKeyInfo.damagochiRice)
-            ballonLabel.text = dialogueList.randomElement()
+            ballonLabel.text = dialogueList?.randomElement()
             setDamagochiInfo()
         }
     }
@@ -119,7 +126,7 @@ class MyDamagochiViewController: UIViewController {
         if waterTextField.text == "" || waterTextField.text == nil {
             UserDefaults.standard.set(damagochiData!.water+1, forKey: UserDefaultsKeyInfo.damagochiWater)
             damagochiData?.water = UserDefaults.standard.integer(forKey: UserDefaultsKeyInfo.damagochiWater)
-            ballonLabel.text = dialogueList.randomElement()
+            ballonLabel.text = dialogueList?.randomElement()
             setDamagochiInfo()
         } else if Int(waterTextField.text!) == nil {
             ballonLabel.text = "숫자만 입력해주세요"
@@ -131,7 +138,7 @@ class MyDamagochiViewController: UIViewController {
         } else {
             UserDefaults.standard.set(damagochiData!.water+Int(waterTextField.text!)!, forKey: UserDefaultsKeyInfo.damagochiWater)
             damagochiData?.water = UserDefaults.standard.integer(forKey: UserDefaultsKeyInfo.damagochiWater)
-            ballonLabel.text = dialogueList.randomElement()
+            ballonLabel.text = dialogueList?.randomElement()
             setDamagochiInfo()
         }
     }
@@ -142,7 +149,9 @@ class MyDamagochiViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        navigationItem.title = "\(UserDefaults.standard.string(forKey: UserDefaultsKeyInfo.myName) ?? "OO")님의 다마고치"
-        ballonLabel.text = dialogueList.randomElement()
+        myName = UserDefaults.standard.string(forKey: UserDefaultsKeyInfo.myName) ?? "OO"
+        navigationItem.title = "\(myName)님의 다마고치"
+        setDialogueList()
+        ballonLabel.text = dialogueList?.randomElement()
     }
 }

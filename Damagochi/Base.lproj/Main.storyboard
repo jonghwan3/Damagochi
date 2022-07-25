@@ -266,7 +266,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GMd-n6-Cj6">
-                                <rect key="frame" x="124" y="434.5" width="166" height="20.5"/>
+                                <rect key="frame" x="41.5" y="434.5" width="331" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -387,6 +387,7 @@
                             <constraint firstItem="eGj-7v-kEz" firstAttribute="width" secondItem="PcC-XO-wds" secondAttribute="width" multiplier="0.7" id="Vbb-1z-nI8"/>
                             <constraint firstItem="NRb-lW-pvj" firstAttribute="centerX" secondItem="yIN-2w-p70" secondAttribute="centerX" id="YvD-IZ-aEo"/>
                             <constraint firstItem="PcC-XO-wds" firstAttribute="width" secondItem="aNR-ra-92X" secondAttribute="width" multiplier="0.8" id="a1F-NC-uGm"/>
+                            <constraint firstItem="GMd-n6-Cj6" firstAttribute="width" secondItem="yeS-TU-51E" secondAttribute="width" multiplier="0.8" id="gJw-eE-O0d"/>
                             <constraint firstItem="GMd-n6-Cj6" firstAttribute="top" secondItem="eGj-7v-kEz" secondAttribute="bottom" constant="8" id="kSi-w0-vap"/>
                             <constraint firstItem="aNR-ra-92X" firstAttribute="top" secondItem="yIN-2w-p70" secondAttribute="top" constant="20" id="kyH-fB-Ega"/>
                             <constraint firstItem="PcC-XO-wds" firstAttribute="centerX" secondItem="yeS-TU-51E" secondAttribute="centerX" id="l17-uA-CdM"/>
@@ -396,7 +397,6 @@
                             <constraint firstItem="aNR-ra-92X" firstAttribute="centerX" secondItem="yeS-TU-51E" secondAttribute="centerX" id="tGl-JM-sg7"/>
                             <constraint firstItem="GMd-n6-Cj6" firstAttribute="centerX" secondItem="yeS-TU-51E" secondAttribute="centerX" id="u5e-lg-kmv"/>
                             <constraint firstItem="Vcv-cq-Vh7" firstAttribute="width" secondItem="D9p-2U-fOm" secondAttribute="width" id="vkq-Xw-l0i"/>
-                            <constraint firstItem="GMd-n6-Cj6" firstAttribute="width" secondItem="PcC-XO-wds" secondAttribute="width" id="vvj-3d-Lc6"/>
                         </constraints>
                     </view>
                     <connections>
@@ -509,6 +509,9 @@
     <designables>
         <designable name="D9p-2U-fOm">
             <size key="intrinsicContentSize" width="48.5" height="18.5"/>
+        </designable>
+        <designable name="OOA-WW-6yf">
+            <size key="intrinsicContentSize" width="4" height="18.5"/>
         </designable>
         <designable name="Vcv-cq-Vh7">
             <size key="intrinsicContentSize" width="48.5" height="18.5"/>
