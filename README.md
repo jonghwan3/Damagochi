@@ -1,5 +1,7 @@
 # Damagochi
 
 
-https://github.com/jonghwan3/Damagochi/assets/97586094/c832415c-f450-458b-b47b-8b5e2c2d7ec2
+
+
+https://github.com/jonghwan3/Damagochi/assets/97586094/5092e616-3114-420e-a870-790c4c263e6d
 
